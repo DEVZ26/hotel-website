@@ -1,0 +1,100 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+/* CENTER CONTAINER */
+.container {
+    max-width: 1100px;       /* THIS is the key */
+    margin: 0 auto;          /* centers content */
+    padding: 30px;
+}
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+/* DIVIDER */
+hr {
+    width: 120px;
+    margin: 0 auto 30px;
+    border: none;
+    height: 4px;
+    background: #457b9d;
+    border-radius: 10px;
+}
+
+/* HOTEL NUMBER */
+.hotel-number {
+    font-size: 26px;
+    color: #457b9d;
+    margin: 25px 0 10px;
+}
+
+/* IMAGE ROW */
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* IMAGES */
+.image-row img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+}
+
+/* BOOKING BUTTON */
+.booking-btn {
+    display: inline-block;
+    background: #1d3557;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* DETAILS */
+.details {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.details li {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    width: fit-content;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
